@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
 *{
     margin: 0;padding: 0;
 }
@@ -21,15 +23,18 @@
     background-color: rgb(1, 1, 95);
 }
 .color-me{
+    font-family: 'Poppins', sans-serif;
     color: aliceblue;
 
 }
 .nav-link:hover{
     font-weight: bolder;
     color: azure;
+    font-family: 'Poppins', sans-serif;
 }
 .navbar-brand:hover{
     color: azure;
+    font-family: 'Poppins', sans-serif;
 }
 
 @media only screen and (max-width: 380px) {
@@ -51,6 +56,7 @@
 .bottom{
     background-color: rgb(1, 1, 95);
     color: aliceblue;
+    font-family: 'Poppins', sans-serif;
     margin: auto;
 }
 .quote{
@@ -62,18 +68,20 @@
     justify-content: center;
     background-color: black;
     color: aliceblue;
+    font-family: 'Poppins', sans-serif;
 }
 .dev{
     width: 100vw;
     display: flex;
     justify-content: right;
     color: aliceblue;
+    font-family: 'Poppins', sans-serif;
 }
 #carouselExample{
-width: 50vw;
-height: 50vh;
+width: 70vw;
 margin: 5px;
 border-radius: 10px;
+margin-bottom: 5px;
 }
 .carousel{
     width: 100vw;
@@ -82,5 +90,31 @@ border-radius: 10px;
 }
 .cardlist{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
 }
+.card{
+    margin: 10px;
+}
+@media only screen and (max-width: 380px) {
+    #carouselExample {
+      width: 100vw;
+    
+    }
+  }
+  @media only screen and (max-width: 810px) {
+    #carouselExample {
+      width: 100vw;
+      
+    }
+  }
+  .aboutText{
+    font-family: 'Poppins', sans-serif;
+  }
+  #about{
+    margin: 10px auto;
+  }
+  .flex{
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
