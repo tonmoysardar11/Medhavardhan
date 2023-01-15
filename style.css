@@ -1,0 +1,86 @@
+*{
+    margin: 0;padding: 0;
+}
+#logo{
+    width: 100px;
+    height: 100px;
+    margin: 0 5px;
+    border-radius: 50px;
+}
+.navbar-brand{
+    display: flex;
+    align-items: center;
+}
+#title1{
+    font-size: 35px;
+}
+#title2{
+    font-size: 25px;
+}
+.navbar{
+    background-color: rgb(1, 1, 95);
+}
+.color-me{
+    color: aliceblue;
+
+}
+.nav-link:hover{
+    font-weight: bolder;
+    color: azure;
+}
+.navbar-brand:hover{
+    color: azure;
+}
+
+@media only screen and (max-width: 380px) {
+    #title1 {
+      font-size: 30px;
+    }
+  }
+
+ #menu{
+    background-color: black;
+ }
+ .blur{
+    font-size: 20px;
+ }
+.heading{
+    width: 100vw;
+    background-color: blanchedalmond;
+}
+.bottom{
+    background-color: rgb(1, 1, 95);
+    color: aliceblue;
+    margin: auto;
+}
+.quote{
+    align-items: center;
+}
+.copy{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: aliceblue;
+}
+.dev{
+    width: 100vw;
+    display: flex;
+    justify-content: right;
+    color: aliceblue;
+}
+#carouselExample{
+width: 50vw;
+height: 50vh;
+margin: 5px;
+border-radius: 10px;
+}
+.carousel{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+.cardlist{
+    display: flex;
+    justify-content: space-evenly;
+}
