@@ -21,166 +21,262 @@
     crossorigin="anonymous"></script>
   <!-- custom js -->
   <script src="index.js"></script>
+  <!--corporate membership popup -->
+  <!-- Button trigger modal -->
+  <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Launch demo modal
+</button> -->
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
 
   <header>
-      <nav class="navbar color-me sticky-top navbar-expand-lg ">
-        <div class="container-fluid">
-          <a class="navbar-brand color-me" href="index.html" name="top">
-            <img id="logo" src="medhavardhan.jpg" alt="Logo" class="d-inline-block align-text-top">
-            <div class="name">
-              <span id="title1" class="color-me">MEDHAVARDHAN</span><br>
-              <span id="title2" class="color-me">FOUNDATION</span>
-            </div>
-          </a>
-          <button type="button" class="btn btn-success">Donate Now <i class="fa-regular fa-heart fa-beat"
-              style="--fa-animation-duration: 2s;"></i>
-          </button>
-          <button type="button" class="btn btn-danger">Admin <i class="fa-solid fa-key"></i>
-          </button>
-        </div>
-      </nav>
-    </header>
-    <main>
-      <!-- body nav -->
-      <ul class="nav justify-content-center bg-dark">
-        <li class="nav-item">
-          <a class="nav-link color-me" href="#lp">Latest Project</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link color-me" href="#g">Gallary</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link color-me" href="#a">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link color-me" href="#f">Founders</a>
-        </li>
-      </ul>
-      <!-- body content -->
-      <!-- projects -->
-      <div class="projects"><a name="lp">
-          <h3 class="heading">
-            Latest Project
-            <small class="text-muted blur">Check our latest project</small>
-          </h3>
-          <div class="carousel">
-            <div id="carouselExample" class="carousel slide">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="c1.jpg" class="d-block w-100" alt="Sample Image">
-                </div>
-                <div class="carousel-item">
-                  <img src="c2.jpg" class="d-block w-100" alt="Sample Image">
-                </div>
-                <div class="carousel-item">
-                  <img src="c3.jpg" class="d-block w-100" alt="Sample Image">
+    <nav class="navbar color-me sticky-top navbar-expand-lg ">
+      <div class="container-fluid">
+        <a class="navbar-brand color" href="index.html" name="top">
+          <img id="logo" src="medhavardhan.jpg" alt="Logo" class="d-inline-block align-text-top">
+          <div class="name">
+            <span id="title1" class="color-me">MEDHAVARDHAN</span><br>
+            <span id="title2" class="color-me">FOUNDATION</span>
+          </div>
+        </a>
+        <button type="button" class="btn btn-danger">Donate Now <i class="fa-regular fa-heart fa-beat"
+            style="--fa-animation-duration: 2s;"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <!-- body nav -->
+    <ul class="nav justify-content-center bg-dark">
+      <li class="nav-item">
+        <a class="nav-link color" href="#om">Our Mission</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link color" href="#g">Gallary</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link color" href="#a">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link color" href="#f">Founders</a>
+      </li>
+      <li class="nav-item">
+        <button class="btn btn-dark dropdown-toggle color" type="button" data-bs-toggle="dropdown"
+          aria-expanded="false">
+          Our Partners
+        </button>
+        <ul class="dropdown-menu bg-dark">
+          <li>
+            <!-- Button trigger modal -->
+            <button type="button" id="myModal_1"class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#corporate">
+              Become Our Corporate Member
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="corporate" tabindex="-1" aria-labelledby="exampleModalLabel1"
+              aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Fill the Details</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="form-group row">
+                        <label for="formGroupName">Name</label>
+                        <input type="text" class="form-control" id="formGroupName" placeholder="Enter Your Name">
+                      </div>
+                      <div class=form-group row3">
+                        <label for="formGroupAddress">Address</label>
+                        <input type="text" class="form-control" id="formGroupAddress" placeholder="Enter Your Address">
+                      </div>
+                      <div class="form-group row">
+                        <label for="formGroupCity">City & State</label>
+                        <input type="text" class="form-control" id="formGroupity" placeholder="Enter Your City & State">
+                      </div>
+                      <div class="form-group row">
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                      </div>
+                      <div class="form-group row">
+                        <label for="exampleInputNo" class="form-label">Contact No.</label>
+                        <input type="tel" class="form-control" id="exampleInputNo" placeholder="12345-67890"
+                          pattern="[0-9]{5}-[0-9]{5}">
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="submit" class="btn btn-success">Submit</button>
+                  </div>
                 </div>
               </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
             </div>
-          </div>
-      </div>
-      <!-- galary -->
-      <div class="galary">
-        <a name="g">
-          <h3 class="heading">
-            Gallary
-            <small class="text-muted blur">Captured Through Our Lense</small>
-          </h3>
-          <ul class="nav justify-content-center bg-light">
-            <li class="nav-item">
-              <div class="card" style="width: 18rem;">
-                <img src="c2.jpg" class="card-img-top" alt="Sample Gallary with cover picture">
-                <div class="card-body">
-                  <p class="card-text">Project Wise Sample Gallary.</p>
+
+
+          </li>
+        </ul>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link color" href="">Membership</a>
+      </li>
+    </ul>
+    <!-- body content -->
+    <!-- projects -->
+    <div class="projects"><a name="om">
+        <h3 class="heading">
+          Our Mission
+          <small class="text-muted blur">Raise Your Helping Hands</small>
+        </h3>
+        <div class="carousel">
+          <div id="carouselExampleAutoplaying" class="carousel slide " data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="c11.jpg" class="d-block w-100">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Do You Know ?</h5>
+                  <p>At least 35 million children aged 6 to 14 years do not attend school</p>
                 </div>
-            </li>
-            <li class="nav-item">
-              <div class="card" style="width: 18rem;">
-                <img src="c3.jpg" class="card-img-top" alt="Sample Gallary with cover picture">
-                <div class="card-body">
-                  <p class="card-text">Project Wise Sample Gallary.</p>
+              </div>
+              <div class="carousel-item">
+                <img src="c12.jpg" class="d-block w-100">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Do You Know ?</h5>
+                  <p>Almost 4500 children die every day in the country due to hunger</p>
                 </div>
-            </li>
-            <li class="nav-item">
-              <div class="card" style="width: 18rem;">
-                <img src="c3.jpg" class="card-img-top" alt="Sample Gallary with cover picture">
-                <div class="card-body">
-                  <p class="card-text">Project Wise Sample Gallary.</p>
+              </div>
+              <div class="carousel-item">
+                <img src="c13.jpg" class="d-block w-100">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Raise Your Helping Hands</h5>
+                  <p>The love you give some will always come back to you</p>
                 </div>
-            </li>
-            <li class="nav-item">
-              <div class="card" style="width: 18rem;">
-                <img src="c2.jpg" class="card-img-top" alt="Sample Gallary with cover picture">
-                <div class="card-body">
-                  <p class="card-text">Project Wise Sample Gallary.</p>
-                </div>
-            </li>
-          </ul>
-      </div>
-      <!-- about -->
-      <div class="aboutUs">
-        <a name="a">
-          <h3 class="heading">
-            About Us
-            <small class="text-muted blur">Know About MEDHAVARDHAN</small>
-          </h3>
-          <div class="card" id="about" style="width: 90vw;">
-            <div class="card-body">
-              <h5 class="card-title">MEDHAVARDHAN</h5>
-              <h6 class="card-subtitle mb-2 text-muted">FOUNDATION</h6>
-              <p class="card-text aboutText">Some quick details about MEDHAVARDHAN FOUNDATION in few words.<br>---Admin
-              </p>
+              </div>
             </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
-      </div>
-      <!-- founders -->
-      <div class="founders">
-        <a name="f">
-          <h3 class="heading">
-            Founders
-            <small class="text-muted blur">Meet The Founders</small>
-          </h3>
-          <ul class="nav flex bg-light">
-            <li class="nav-item">
-              <div class="card" style="width: 25rem;">
-                <img src="sample.jpg" class="card-img-top" alt="Mr. ABC">
-                <div class="card-body">
-                  <p class="card-text">Mr. ABC<br>- Founder,MEDHAVARDHAN FOUNDATION</p>
-                </div>
-            </li>
-            <li class="nav-item">
-              <div class="card" style="width: 25rem;">
-                <img src="sample.jpg" class="card-img-top" alt="Mr. XYZ">
-                <div class="card-body">
-                  <p class="card-text">Mr. XYZ<br>- Founder,MEDHAVARDHAN FOUNDATION</p>
-                </div>
-            </li>
-          </ul>
-      </div>
-    </main>
-    <a href="#top">Go to Top</a>
-    <footer class="bottom">
-      <blockquote class="blockquote quote mx-3">
-        <p>"It's not how much we give,but how much love we put into giving"</p>
-        ---<cite title="Source Title">Mother Teresa</cite>
-      </blockquote>
-      <span class="copy">
-        Copyright Reserved &copy; MEDHAVARDHAN FOUNDATION 2023
-      </span>
-      <span class="dev bg-danger">
-        Developed by Tonmoy Sardar & Birendra Nath Mondal
-      </span>
-    </footer>
+        </div>
+    </div>
+    <!-- galary -->
+    <div class="galary">
+      <a name="g">
+        <h3 class="heading">
+          Gallary
+          <small class="text-muted blur">Captured Through Our Lense</small>
+        </h3>
+        <ul class="nav justify-content-center bg-light">
+          <li class="nav-item">
+            <div class="card" style="width: 18rem;">
+              <img src="c2.jpg" class="card-img-top" alt="Sample Gallary with cover picture">
+              <div class="card-body">
+                <p class="card-text">Project Wise Sample Gallary.</p>
+              </div>
+          </li>
+          <li class="nav-item">
+            <div class="card" style="width: 18rem;">
+              <img src="c3.jpg" class="card-img-top" alt="Sample Gallary with cover picture">
+              <div class="card-body">
+                <p class="card-text">Project Wise Sample Gallary.</p>
+              </div>
+          </li>
+          <li class="nav-item">
+            <div class="card" style="width: 18rem;">
+              <img src="c3.jpg" class="card-img-top" alt="Sample Gallary with cover picture">
+              <div class="card-body">
+                <p class="card-text">Project Wise Sample Gallary.</p>
+              </div>
+          </li>
+          <li class="nav-item">
+            <div class="card" style="width: 18rem;">
+              <img src="c2.jpg" class="card-img-top" alt="Sample Gallary with cover picture">
+              <div class="card-body">
+                <p class="card-text">Project Wise Sample Gallary.</p>
+              </div>
+          </li>
+        </ul>
+    </div>
+    <!-- about -->
+    <div class="aboutUs">
+      <a name="a">
+        <h3 class="heading">
+          About Us
+          <small class="text-muted blur">Know About MEDHAVARDHAN</small>
+        </h3>
+        <div class="card" id="about" style="width: 90vw;">
+          <div class="card-body">
+            <h5 class="card-title">MEDHAVARDHAN</h5>
+            <h6 class="card-subtitle mb-2 text-muted">FOUNDATION</h6>
+            <p class="card-text aboutText">Some quick details about MEDHAVARDHAN FOUNDATION in few words.<br>---Admin
+            </p>
+          </div>
+        </div>
+    </div>
+    <!-- founders -->
+    <div class="founders">
+      <a name="f">
+        <h3 class="heading">
+          Founders
+          <small class="text-muted blur">Meet The Founders</small>
+        </h3>
+        <ul class="nav flex bg-light">
+          <li class="nav-item">
+            <div class="card" style="width: 25rem;">
+              <img src="sample.jpg" class="card-img-top" alt="Mr. ABC">
+              <div class="card-body">
+                <p class="card-text">Mr. ABC<br>- Founder,MEDHAVARDHAN FOUNDATION</p>
+              </div>
+          </li>
+          <li class="nav-item">
+            <div class="card" style="width: 25rem;">
+              <img src="sample.jpg" class="card-img-top" alt="Mr. XYZ">
+              <div class="card-body">
+                <p class="card-text">Mr. XYZ<br>- Founder,MEDHAVARDHAN FOUNDATION</p>
+              </div>
+          </li>
+        </ul>
+    </div>
+  </main>
+  <a href="#top">Go to Top</a>
+  <footer class="bottom">
+    <blockquote class="blockquote quote mx-3">
+      <p>"It's not how much we give,but how much love we put into giving"</p>
+      ---<cite title="Source Title">Mother Teresa</cite>
+    </blockquote>
+    <span class="copy">
+      Copyright Reserved &copy; MEDHAVARDHAN FOUNDATION 2023
+    </span>
+    <span class="dev bg-danger">
+      Developed by Tonmoy Sardar & Birendra Nath Mondal
+    </span>
+  </footer>
 </body>
 
 </html>

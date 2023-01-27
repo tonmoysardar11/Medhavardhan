@@ -1,0 +1,35 @@
+ <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Fill the Details</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="form-group row">
+                        <label for="formGroupName">Name</label>
+                        <input type="text" class="form-control" id="formGroupName" placeholder="Enter Your Name">
+                      </div>
+                      <div class=form-group row3">
+                        <label for="formGroupAddress">Address</label>
+                        <input type="text" class="form-control" id="formGroupAddress" placeholder="Enter Your Address">
+                      </div>
+                      <div class="form-group row">
+                        <label for="formGroupCity">City & State</label>
+                        <input type="text" class="form-control" id="formGroupity" placeholder="Enter Your City & State">
+                      </div>
+                      <div class="form-group row">
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                      </div>
+                      <div class="form-group row">
+                        <label for="exampleInputNo" class="form-label">Contact No.</label>
+                        <input type="tel" class="form-control" id="exampleInputNo" placeholder="12345-67890"
+                          pattern="[0-9]{5}-[0-9]{5}">
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="submit" class="btn btn-success">Submit</button>
+                  </div>
+                </div>

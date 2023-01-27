@@ -19,13 +19,17 @@
 #title2{
     font-size: 25px;
 }
-.navbar{
+/* .navbar{
     background-color: rgb(1, 1, 95);
-}
+} */
 .color-me{
     font-family: 'Poppins', sans-serif;
-    color: aliceblue;
+    color: rgb(1, 1, 95);
 
+}
+.color{
+    font-family: 'Poppins', sans-serif;
+    color: aliceblue;
 }
 .nav-link:hover{
     font-weight: bolder;
@@ -77,7 +81,7 @@
     color: aliceblue;
     font-family: 'Poppins', sans-serif;
 }
-#carouselExample{
+#carouselExampleAutoplaying{
 width: 70vw;
 margin: 5px;
 border-radius: 10px;
@@ -96,13 +100,13 @@ margin-bottom: 5px;
     margin: 10px;
 }
 @media only screen and (max-width: 380px) {
-    #carouselExample {
+    #carouselExampleAutoplaying {
       width: 100vw;
     
     }
   }
   @media only screen and (max-width: 810px) {
-    #carouselExample {
+    #carouselExampleAutoplaying {
       width: 100vw;
       
     }
@@ -117,4 +121,10 @@ margin-bottom: 5px;
     display: flex;
     justify-content: space-evenly;
   }
-  
+ 
+  .carousel-item img{
+    height: 400px;
+    width: 800px;
+    border-radius: 10px;
+  }
+ 
