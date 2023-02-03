@@ -22,17 +22,26 @@
   <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
     crossorigin="anonymous"></script> -->
+    <div class="top">
+      <p>E-mail : medhavardhanfoundation@gmail.com</p>
+      <div class="iconset">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-whatsapp"></i>
+        <i class="fa-brands fa-twitter"></i>
+      </div>
+      <p>Contact No. : 8910179038/9831050624/9830015090/8335090900</p>
+    </div>
 
-
-<header>
+  <header>
     <nav class="navbar color-me sticky-top navbar-expand-lg ">
       <div class="container-fluid">
         <a class="navbar-brand color" href="index.html" name="top">
-            <img id="logo" src="mf1.jpeg" alt="Logo" class="d-inline-block align-text-top">
-            <div class="name">
-              <!-- <div id="title1" class="color-me">MEDHAVARDHAN</div><br>
+          <img id="logo" src="mf1.jpeg" alt="Logo" class="d-inline-block align-text-top">
+          <div class="name">
+            <!-- <div id="title1" class="color-me">MEDHAVARDHAN</div><br>
               <div id="title2" class="color-me">FOUNDATION</div> -->
-            </div>
+          </div>
         </a>
         <div class="top-button">
           <button type="button" class="btn btn-danger"><a class="nav-link color" href="donate.html">Donate Now <i
@@ -49,16 +58,16 @@
     <!-- body nav -->
     <ul class="nav justify-content-center bg-dark">
       <li class="nav-item">
-        <a class="nav-link color" href="#om">Our Mission</a>
+        <a class="nav-link color" href="index.html#om">Our Mission</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link color" href="#g">Gallary</a>
+        <a class="nav-link color" href="index.html#g">Gallary</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link color" href="#a">About</a>
+        <a class="nav-link color" href="index.html#a">About</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link color" href="#f">Founders</a>
+        <a class="nav-link color" href="index.html#f">Founders</a>
       </li>
       <li class="nav-item">
         <div class="dropdown">
@@ -80,53 +89,79 @@
         <a class="nav-link color" href="membership.html">Membership</a>
       </li>
     </ul>
-<div class="donation">
-    <div class="d-flex align-items-start">
-        <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-          <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">UPI Payment</button>
-          <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">NEFT/RTGS/Online Transfer/button>
-          <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Credit/Debit Card</button>
-        </div>
-        <div class="tab-content" id="v-pills-tabContent">
-          <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab" tabindex="0"><img src="upi-img.jpg" alt="Scan & Pay"></div>
-          <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab" tabindex="0"> <div class="card" style="width: 50rem;">
-            <div class="card-body NEFT">
-              <h5 class="card-title">NEFT/RTGS/IMPS/Online Transfer</h5>
-              <p class="card-text">
-                <h3> BANK  ACCOUNT  DETAIL </h3>
-                <br>
-                NAME     : MEDHAVARDHAN FOUNDATION
-                <br>
-                A/C  NO. : 10121077494
-                <br>
-                IFSC     : IDFB0060109
-                <br>
-                BANK     : IDFC FIRST, Kolkata-Garia Branch</p>
+    <div class="donation">
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              UPI Payment
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <img src="upi-img.jpg" alt="Scan & Pay">
             </div>
-          </div></div>
-          <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab" tabindex="0">Gateway Under Progress.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              NEFT/RTGS/IMPS/Bank Transfer
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <div class="card" style="width: 50rem;">
+                <div class="card-body NEFT">
+                  <h5 class="card-title">NEFT/RTGS/IMPS/Online Transfer</h5>
+                  <p class="card-text">
+                    <h3> BANK  ACCOUNT  DETAIL </h3>
+                    <br>
+                    NAME     : MEDHAVARDHAN FOUNDATION
+                    <br>
+                    A/C  NO. : 10121077494
+                    <br>
+                    IFSC     : IDFB0060109
+                    <br>
+                    BANK     : IDFC FIRST, Kolkata-Garia Branch</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Credit Card/Debit Card 
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+             Gateway Under Progress. Please Try Later.
+            </div>
+          </div>
         </div>
       </div>
-      </div>
-</div>
+    </div>
+    </div>
 
     <div id="down">
-        <img src="mf1.jpeg">
+      <img src="mf1.jpeg">
     </div>
-            
-            <footer class="bottom">
-                <blockquote class="blockquote quote mx-3">
-                    <p>"It's not how much we give,but how much love we put into giving"</p>
-                    ---<cite title="Source Title">Mother Teresa</cite>
-                </blockquote>
-                <span class="copy">
-                    Copyright Reserved &copy; MEDHAVARDHAN FOUNDATION 2023
-                </span>
-                <span class="dev bg-danger">
-                    Developed by Tonmoy Sardar & Birendra Nath Mondal
-                </span>
-            </footer>
-    </body>
-    <script src="index.js"></script>
-    
-    </html>
+
+    <footer class="bottom">
+      <blockquote class="blockquote quote mx-3">
+        <p>"It's not how much we give,but how much love we put into giving"</p>
+        ---<cite title="Source Title">Mother Teresa</cite>
+      </blockquote>
+      <span class="copy">
+        Copyright Reserved &copy; MEDHAVARDHAN FOUNDATION 2023
+      </span>
+      <span class="dev bg-danger">
+        Developed by Tonmoy Sardar & Birendra Nath Mondal
+      </span>
+    </footer>
+</body>
+<script src="index.js"></script>
+
+</html>

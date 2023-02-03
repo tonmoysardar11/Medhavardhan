@@ -102,7 +102,7 @@ margin-bottom: 5px;
 .card{
     margin: 10px;
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 470px) {
     #carouselExampleAutoplaying {
       width: 100vw;
     
@@ -112,6 +112,9 @@ margin-bottom: 5px;
     }
     #title2{
         font-size: 20px;
+    }
+    #logo{
+        width: 80vw;
     }
   }
   @media only screen and (max-width: 810px) {
@@ -219,12 +222,16 @@ margin-bottom: 5px;
     .education,.food{
         width: 90vw;
     }
+    
+}
+@media only screen and (max-width: 760px) {
+    
     .corporate-form,.member-form{
         width: 100vw;
     }
 }
 .corporate-form,.member-form{
-    width: 50vw;
+    width: 60vw;
     margin: 0 auto;
 }
 
@@ -240,7 +247,7 @@ margin-bottom: 5px;
     justify-content: center;
 
 }
-#down{
+#down img{
     margin: 0 auto;
     width: 100vw;
     display: flex;
@@ -253,4 +260,26 @@ margin-bottom: 5px;
 .neft{
     display: flex;
     justify-content: center;
+}
+.accordion-body,.donation{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+.accordion-body img{
+    width: 100vw;
+
+}
+.top{
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.iconset i{
+    margin: 0 10px;
+    cursor: pointer;
 }
