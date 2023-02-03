@@ -9,6 +9,9 @@
     margin: 0 5px;
     border-radius: 50px;
 }
+#blue{
+    background-color: rgb(1, 1, 95);;
+}
 .navbar-brand{
     display: flex;
     align-items: center;
@@ -99,10 +102,16 @@ margin-bottom: 5px;
 .card{
     margin: 10px;
 }
-@media only screen and (max-width: 380px) {
+@media only screen and (max-width: 400px) {
     #carouselExampleAutoplaying {
       width: 100vw;
     
+    }
+    #title1{
+        font-size: 30px;
+    }
+    #title2{
+        font-size: 20px;
     }
   }
   @media only screen and (max-width: 810px) {
@@ -110,21 +119,97 @@ margin-bottom: 5px;
       width: 100vw;
       
     }
-  }
+}
   .aboutText{
     font-family: 'Poppins', sans-serif;
-  }
-  #about{
+}
+#about{
     margin: 10px auto;
-  }
-  .flex{
+}
+.flex{
     display: flex;
     justify-content: space-evenly;
-  }
- 
-  .carousel-item img{
+}
+
+.carousel-item img{
     height: 400px;
     width: 800px;
     border-radius: 10px;
-  }
- 
+}
+.corporate-form,.form-group,.form-footer{
+    padding: 10px 15px;
+}
+.form-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+    /* border-radius: 2px; */
+    /* border: 2px solid blue; */
+    color: rgb(1, 1, 95);
+    font-weight: bold;
+}
+
+.education,.food{
+    color: rgb(1, 1, 95);
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    margin: 10px;
+    border: 2px solid black;
+    border-radius: 20px;
+    height: 350px;
+}
+.education h3,.food h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: auto;
+    padding-top: 5px;
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
+    background-color:  rgb(1, 1, 95);
+    border-radius: 20px;
+}
+.education p,.food p{
+    padding: 3px;
+    font-family: 'Poppins', sans-serif;
+}
+.mission{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.b_target{
+   margin: auto; 
+}
+.target{
+    margin: 10px;
+    padding: 5px;
+}
+.dt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+.benefit .card-group{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2% 12.5%;
+}
+.benefit-p{
+    padding: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:  rgb(1, 1, 95);
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+}
+.card-b{
+    width: 25%;
+}
