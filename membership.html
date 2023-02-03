@@ -25,68 +25,185 @@
 
 
 
-    <header>
-        <nav class="navbar color-me sticky-top navbar-expand-lg ">
-            <div class="container-fluid">
+        <header>
+            <nav class="navbar color-me sticky-top navbar-expand-lg ">
+              <div class="container-fluid">
                 <a class="navbar-brand color" href="index.html" name="top">
-                    <img id="logo" src="medhavardhan.jpg" alt="Logo" class="d-inline-block align-text-top">
+                    <img id="logo" src="mf1.jpeg" alt="Logo" class="d-inline-block align-text-top">
                     <div class="name">
-                        <span id="title1" class="color-me">MEDHAVARDHAN</span><br>
-                        <span id="title2" class="color-me">FOUNDATION</span>
+                      <!-- <div id="title1" class="color-me">MEDHAVARDHAN</div><br>
+                      <div id="title2" class="color-me">FOUNDATION</div> -->
                     </div>
                 </a>
                 <div class="top-button">
-                    <button type="button" class="btn btn-danger">Donate Now <i class="fa-regular fa-heart fa-beat"
-                            style="--fa-animation-duration: 2s;"></i>
-                    </button>
-                    <button type="button" class="btn btn-primary">Become a Member <i
-                            class="fa-regular fa-handshake"></i>
-                    </button>
+                  <button type="button" class="btn btn-danger"><a class="nav-link color" href="donate.html">Donate Now <i
+                        class="fa-regular fa-heart fa-beat" style="--fa-animation-duration: 2s;"></i></a>
+                  </button>
+                  <button type="button" class="btn btn-primary"><a class="nav-link color" href="membership.html">Become a Member
+                      <i class="fa-regular fa-handshake"></i></a>
+                  </button>
                 </div>
-            </div>
-        </nav>
-    </header>
-    <main>
-        <!-- body nav -->
-        <ul class="nav justify-content-center bg-dark">
+              </div>
+            </nav>
+          </header>
+          <main>
+            <!-- body nav -->
             <ul class="nav justify-content-center bg-dark">
-                <li class="nav-item">
-                    <a class="nav-link color" href="index.html#om">Our Mission</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link color" href="index.html#g">Gallary</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link color" href="index.html#a">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link color" href="index.html#f">Founders</a>
-                </li>
-            <li class="nav-item">
+              <li class="nav-item">
+                <a class="nav-link color" href="#om">Our Mission</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link color" href="#g">Gallary</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link color" href="#a">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link color" href="#f">Founders</a>
+              </li>
+              <li class="nav-item">
                 <div class="dropdown">
-                    <button class="btn btn-dark dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        Our Members
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li class="nav-item">
-                            <button class="btn btn-dark">
-                                <a class="nav-link color" href="corporate.html">
-                                    Become Our Corporate Member
-                                </a>
-                            </button>
-                        </li>
-                    </ul>
+                  <button class="btn btn-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Our Members
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li class="nav-item">
+                      <button class="btn btn-dark">
+                        <a class="nav-link color" href="corporate.html">
+                          Become Our Corporate Member
+                        </a>
+                      </button>
+                    </li>
+                  </ul>
                 </div>
-            </li>
-            <li class="nav-item">
+              </li>
+              <li class="nav-item">
                 <a class="nav-link color" href="membership.html">Membership</a>
-            </li>
-        </ul>
+              </li>
+            </ul>
         <div class="membership">
+            <div class="form-header">
+                Fill The Details To Get Membership
+            </div>
+            <div class="member">
+                <form class="member-form">
+                    <div class="form-group row">
+                        <label for="formGroupName">Name</label>
+                        <input type="text" class="form-control" id="formGroupName" placeholder="Enter Your Name">
+                    </div>
+                    <div class="form-group row">
+                        <label for="formGroupName">Date of Birth</label>
+                        <input type="date" class="form-control" id="formGroupDate" placeholder="DD-MM-YYYY">
+                    </div>
+                    <div class="form-group row">
+                        <label for="formGroupName">Gender</label>
+                        <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                            <option selected>Select</option>
+                            <option value="1">Male</option>
+                            <option value="2">Female</option>
+                            <option value="3">Others</option>
+                        </select>
+                    </div>
+                    <div class="form-group row">
+                        <label for="formGroupName">Aadhar No.</label>
+                        <input type="number" class="form-control" id="formGroupName" placeholder="Enter Your Aadhar No.">
+                    </div>
+                    <div class="form-group row">
+                        <label for="formGroupName">PAN No.</label>
+                        <input type="" class="form-control" id="formGroupName" placeholder="Enter Your Aadhar No.">
+                    </div>
+                    <div class="form-group row">
+                        <label for="formGroupName">Father's Name</label>
+                        <input type="text" class="form-control" id="formGroupName" placeholder="Enter Your Father's Name">
+                    </div>
+                    <div class="form-group row">
+                        <label for="formGroupName">Father's Occupation</label>
+                        <input type="text" class="form-control" id="formGroupName" placeholder="Enter Your Father's Occupation">
+                    </div>
+                    <div class="form-group row">
+                        <label for="formGroupName">Blood Group</label>
+                        <input type="text" class="form-control" id="formGroupName" placeholder="Enter Your Blood Group">
+                    </div>
+                    <div class="form-group row">
+                        <label for="formGroupAddress">Address</label>
+                        <input type="text" class="form-control" id="formGroupAddress" placeholder="Enter Your Address">
+                    </div>
+                    <div class="form-group row">
+                        <label for="formGroupCity">City & State</label>
+                        <input type="text" class="form-control" id="formGroupcity" placeholder="Enter Your City & State">
+                    </div>
+                    <div class="form-group row">
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="exampleInputNo" class="form-label">Contact No.</label>
+                        <input type="tel" class="form-control" id="exampleInputNo" placeholder="12345-67890"
+                            pattern="[0-9]{5}-[0-9]{5}">
+                    </div>
+                    <div class="form-group row">
+                        <label for="formGroupName">Profession</label>
+                        <input type="text" class="form-control" id="formGroupName" placeholder="Enter Your Profession">
+                    </div>
+                    <div class="form-group row">
+                        <label for="formGroupName">Purpose of Membership</label>
+                        <textarea class="form-control" aria-label="With textarea"></textarea>
+                    </div>
+                    <div class="form-group row">
+                        <label for="formGroupName">Hobbies</label>
+                        <textarea class="form-control" aria-label="With textarea"></textarea>
+                    </div>
+                    <div class="form-group row">
+                        <label for="formGroupName">Extracurricular Activities</label>
+                        <textarea class="form-control" aria-label="With textarea"></textarea>
+                    </div>
+                    <div class="form-footer">
+                        <button type="submit" class="btn btn-success">Submit</button>
+                        <button type="submit" class="btn btn-secondary">Reset</button>
+                    </div>
+                </form>
 
+            </div>
         </div>
-
+        <div class="tc">
+            <p>
+                <h3> Terms And Conditions </h3>
+                <br>
+                <br>
+1) The person should be above 18 years to be active member of this organization and without any
+criminal background.
+<br>
+2) The person should be physically and mentally strong and willing to work for the organization
+individually or in a group and travel at his own expenses.
+<br>
+3) A person is selected and can be removed by the President or the core group without any
+notice or giving any reason for misconduct, misbehavior or indiscipline.
+<br>
+4) The member is willing to work and obey the President and the core group.
+<br>
+5) The member will give his best effort to full fill objective and task assigned to him or her.
+<br>
+6) Member should attend the general meetings and participate fully and will give written
+application for being absent, 3 days before the meeting.
+<br>
+7) The meetings will be held on weekends on Saturday or Sundays at various locations. Meetings
+will be headed by President, the core group and members.
+<br>
+8) The President has the supreme power to form or diffuse a core group and or members.
+It is duty of a member to obey with due respect to the directions as laid by the President
+along with the core group.
+<br>
+9) Membership Fee should be paid with Application Form. On Rejection of
+Application the Membership fee will be refund within 7 working days.
+<br>
+            </p>
+            
+        </div>
+<div id="down">
+    <img src="mf1.jpeg">
+</div>
+        
         <footer class="bottom">
             <blockquote class="blockquote quote mx-3">
                 <p>"It's not how much we give,but how much love we put into giving"</p>

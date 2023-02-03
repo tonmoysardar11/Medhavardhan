@@ -1,0 +1,30 @@
+<div class="mission">
+            <span class="education">
+              <h3>Child Illiteracy</h3>
+              <br>
+              <p>There are still places in our country where the children don’t even have the access to basic education.
+                This,as well as other compounded factors, have led to a high rate of illiteracy in India.
+                Initiatives by the Government to reduce the rate of illiteracy in India are
+                far from being achieved, therefore it becomes all the more necessary to share some help.
+                <br>
+                Hence we,Medhavardhan Foundation have come up with some small initiative in place to reduce the
+                illiteracy in
+                India and we urge people to join us for this noble cause.
+              </p>
+            </span>
+            <span class="food">
+              <h3>Child Malnutrition & Poverty</h3>
+              <br>
+              <p>
+                The deaths due to Starvation in India are more than the scarcity of food. It is also an outcome of the
+                failure of administration organizations which are destined to aid the deprived and the underprivileged
+                people. The government should implement the current as well as upcoming schemes with a motive to
+                eliminate the starvation in India.
+                <br>
+                Hence we,Medhavardhan Foundation have come up with some small initiative in place to stop the fight of
+                starvation in
+                India and we urge people to join us for this noble cause.
+              </p>
+            </span>
+            </span>
+          </div>
