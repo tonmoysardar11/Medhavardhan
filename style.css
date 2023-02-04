@@ -285,7 +285,7 @@ margin-bottom: 5px;
     cursor: pointer;
 }
 body{
-    overflow: hidden;
+    overflow-x: hidden;
 }
 .iconset-2{
     width: 40vw;
