@@ -5,8 +5,8 @@
     padding: 0;
 }
 #logo{
-    width: 450px;
-    height: 150px;
+    width: 407px;
+    height: 140px;
     margin: 0 5px;
     border-radius: 50px;
 }
@@ -60,6 +60,7 @@
 .heading{
     width: 100vw;
     background-color: blanchedalmond;
+    padding: 0 5px;
 }
 .bottom{
     background-color: rgb(1, 1, 95);
@@ -102,6 +103,15 @@ margin-bottom: 5px;
 }
 .card{
     margin: 10px;
+    height: 322px;
+}
+#upi{
+    width: 500px;
+    height: 500px;
+}
+#certificate,#people,#tickets{
+    width: 200px;
+    margin: 0 auto;
 }
 @media only screen and (max-width: 470px) {
     #carouselExampleAutoplaying {
@@ -311,15 +321,36 @@ html,body{
         opacity: 1;
         margin: 5px auto;
     }
-    /* .top-button{
-        width: 90vw;
-        display: flex;
-        justify-content: space-between;
-    } */
+    .top{
+        display: block;
+        text-align: left;
+    }
+    .top p{
+        margin-bottom:5px;
+    }
 }
 .bodyNav ul{
 width: 100vw;
 }
 .b-nav{
     margin-left: -12px;
+}
+.top p{
+    padding: 0 10px;
+    padding-top: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+.tax{
+    font-size: x-small;
+    text-align: center;
+}
+#modalimg{
+width: 30vw;
+}
+@media only screen and (max-width: 576px) {
+    
+    #modalimg{
+        width: 80vw;
+        }
 }

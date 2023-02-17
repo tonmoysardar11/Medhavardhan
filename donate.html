@@ -30,7 +30,7 @@
         <i class="fa-brands fa-whatsapp fa-2x"></i>
         <i class="fa-brands fa-twitter fa-2x"></i>
       </div>
-      <p>Contact No. : 8910179038/9831050624/9830015090/8335090900</p>
+      <p>Contact No. : 8335090900</p>
     </div>
   <header>
     <nav class="navbar color-me sticky-top navbar-expand-lg ">
@@ -73,7 +73,7 @@
           <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
     <ul class="nav justify-content-center bg-dark">
       <li class="nav-item">
-        <a class="nav-link color" href="#om">Our Mission</a>
+        <a class="nav-link color" href="index.html">Home</a>
       </li>
       <li class="nav-item">
         <a class="nav-link color" href="#g">Gallary</a>
@@ -107,18 +107,85 @@
   </div>
 </div>
 </nav>
+<div class="membership">
+  <div class="form-header">
+    Fill The Details To Donate
+  </div>
+  <div class="member">
+    <form class="member-form">
+      <div class="form-group row">
+        <label for="formGroupName">Name</label>
+        <input type="text" class="form-control" id="formGroupName" placeholder="Enter Your Name" required>
+      </div>
+      
+      <div class="form-group row">
+        <label for="formGroupName">Gender</label>
+        <select class="form-select form-select-sm" aria-label=".form-select-sm example" required>
+          <option selected>Select</option>
+          <option value="1">Male</option>
+          <option value="2">Female</option>
+          <option value="3">Others</option>
+        </select>
+      </div>
+
+      <div class="form-group row">
+        <label for="formGroupName">PAN No. </label>
+        <input type="" class="form-control" id="formGroupName" placeholder="ABCD1234E" pattern="[A-Z]{5}[0-9]{4}[A-Z]{1}" required>
+      </div>
+
+
+      <div class="form-group row">
+        <label for="formGroupAddress">Address</label>
+        <input type="text" class="form-control" id="formGroupAddress" placeholder="Enter Your Address" required>
+      </div>
+      <div class="form-group row">
+        <label for="formGroupCity">City</label>
+        <input type="text" class="form-control" id="formGroupcity" placeholder="Enter Your City" required>
+      </div>
+      <div class="form-group row">
+        <label for="formGroupCity">State</label>
+        <input type="text" class="form-control" id="formGroupcity" placeholder="Enter Your State" required>
+      </div>
+      <div class="form-group row">
+        <label for="exampleInputEmail1" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="abc@xyz.com" aria-describedby="emailHelp" required>
+        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+      </div>
+      <div class="form-group row">
+        <label for="exampleInputNo" class="form-label">Contact No.</label>
+        <input type="tel" class="form-control" id="exampleInputNo" placeholder="1234567890" pattern="[0-9]{10}" required>
+      </div>
+      <div class="tc">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" required>
+          <label class="form-check-label" for="flexCheckDefault">
+            I accept Terms & Conditions
+          </label>
+        </div>
+      </div>
+      <div class="form-group row">
+        <p class="tax">*YOUR CONTRIBUTIONS ARE ELIGIBLE FOR UPTO 50% TAX BENEFIT UNDER SECTION 80G AS MEDHAVARDHAN FOUNDATION IS REGISTERED AS NON PROFIT ORGANIZATION*</p>
+      </div>
+      <div class="form-footer">
+        <button type="submit" class="btn btn-success">Submit</button>
+        <button type="submit" class="btn btn-secondary">Reset</button>
+      </div>
+    </form>
+
+  </div>
+</div>
   </div>
     <div class="donation">
       <div class="accordion" id="accordionExample">
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingOne">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
               UPI Payment
             </button>
           </h2>
-          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+          <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
             <div class="accordion-body">
-              <img src="upi-img.jpg" alt="Scan & Pay">
+              <img id="upi" src="upi-img.jpg" alt="Scan & Pay">
             </div>
           </div>
         </div>

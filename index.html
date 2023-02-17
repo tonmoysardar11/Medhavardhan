@@ -15,6 +15,8 @@
 </head>
 
 <body>
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
   <!-- bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
@@ -22,7 +24,20 @@
   <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
     crossorigin="anonymous"></script> -->
-
+    <div class="modal" tabindex="-1" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Welcome To Official Page of Medhavardhan Foundation</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <a href="donate.html" alt="Click To Donate">
+              <img id="modalimg" src="mf1.jpeg">
+          </div>
+        </div>
+      </div>
+    </div>
 
   
     <div class="top">
@@ -33,7 +48,7 @@
         <i class="fa-brands fa-whatsapp fa-2x"></i>
         <i class="fa-brands fa-twitter fa-2x"></i>
       </div>
-      <p>Contact No. : 8910179038/9831050624/9830015090/8335090900</p>
+      <p>Contact No. : 8335090900</p>
     </div>
   <header>
     <nav class="navbar color-me sticky-top navbar-expand-lg ">
@@ -76,7 +91,7 @@
           <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
     <ul class="nav justify-content-center bg-dark">
       <li class="nav-item">
-        <a class="nav-link color" href="#om">Our Mission</a>
+        <a class="nav-link color" href="index.html">Home</a>
       </li>
       <li class="nav-item">
         <a class="nav-link color" href="#g">Gallary</a>
@@ -114,10 +129,6 @@
     <!-- body content -->
     <!-- projects -->
     <div class="projects"><a name="om">
-        <h3 class="heading">
-          Our Mission
-          <small class="text-muted blur">Let's Share A Helping Hands</small>
-        </h3>
         <div class="carousel">
           <div id="carouselExampleAutoplaying" class="carousel slide " data-bs-ride="carousel">
             <div class="carousel-inner">
@@ -211,7 +222,7 @@
           <ul class="nav flex bg-light">
             <li class="nav-item">
               <div class="card" style="width: 18rem;">
-                <img src="certificate.png" class="card-img-top">
+                <img id="certificate" src="certificate.png" class="card-img-top">
                 <div class="card-body">
                   <p class="card-text">We issue a certificate of membership to welcome you to the Donor Family and
                     honour your contribution.</p>
@@ -219,7 +230,7 @@
             </li>
             <li class="nav-item">
               <div class="card" style="width: 18rem;">
-                <img src="people.png" class="card-img-top">
+                <img id="people" src="people.png" class="card-img-top">
                 <div class="card-body">
                   <p class="card-text">You are joined by many other like-minded changemakers from across the country who
                     believe in collective efforts.</p>
@@ -227,7 +238,7 @@
             </li>
             <li class="nav-item">
               <div class="card" style="width: 18rem;">
-                <img src="tickets.png" class="card-img-top">
+                <img id="tickets" src="tickets.png" class="card-img-top">
                 <div class="card-body">
                   <p class="card-text">You get access to exclusive events curated by our partners and staff.</p>
                 </div>
@@ -237,11 +248,10 @@
 
     </div>
     <!-- galary -->
-    <!-- <div class="galary">
+    <div class="galary">
       <a name="g">
         <h3 class="heading">
           Gallary
-          <small class="text-muted blur">Captured Through Our Lense</small>
         </h3>
         <ul class="nav justify-content-center bg-light">
           <li class="nav-item">
@@ -269,17 +279,16 @@
             <div class="card" style="width: 18rem;">
               <img src="c2.jpg" class="card-img-top" alt="Sample Gallary with cover picture">
               <div class="card-body">
-                <p class="card-text">Project Wise Sample Gallary.</p>
+                <p class="card-text"> Gallary.</p>
               </div>
           </li>
         </ul>
-    </div> -->
-    <!-- about -->
+    </div>
+     <!-- about -->
     <div class="aboutUs">
       <a name="a">
         <h3 class="heading">
           About Us
-          <small class="text-muted blur">Know About MEDHAVARDHAN</small>
         </h3>
         <div class="card" id="about" style="width: 90vw;">
           <div class="card-body">
@@ -289,13 +298,12 @@
             </p>
           </div>
         </div>
-    </div>
-    <!-- founders -->
+    </div> 
+    <!-- <-- founders --> 
     <div class="founders">
       <a name="f">
         <h3 class="heading">
           Founders
-          <small class="text-muted blur">Meet The Founders</small>
         </h3>
         <ul class="nav flex bg-light">
           <li class="nav-item">
