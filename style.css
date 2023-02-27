@@ -3,6 +3,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Poppins', sans-serif;
 }
 #logo{
     width: 407px;
@@ -27,22 +28,21 @@
     background-color: rgb(1, 1, 95);
 } */
 .color-me{
-    font-family: 'Poppins', sans-serif;
+   
     color: rgb(1, 1, 95);
 
 }
 .color{
-    font-family: 'Poppins', sans-serif;
+   
     color: aliceblue;
 }
 .nav-link:hover{
     font-weight: bolder;
     color: azure;
-    font-family: 'Poppins', sans-serif;
 }
 .navbar-brand:hover{
     color: azure;
-    font-family: 'Poppins', sans-serif;
+    
 }
 
 @media only screen and (max-width: 380px) {
@@ -60,12 +60,11 @@
 .heading{
     width: 100vw;
     background-color: blanchedalmond;
-    padding: 0 5px;
+    padding: 0 75px;
 }
 .bottom{
     background-color: rgb(1, 1, 95);
     color: aliceblue;
-    font-family: 'Poppins', sans-serif;
     margin: auto;
 }
 .quote{
@@ -77,14 +76,14 @@
     justify-content: center;
     background-color: black;
     color: aliceblue;
-    font-family: 'Poppins', sans-serif;
+    
 }
 .dev{
     width: 100vw;
     display: flex;
     justify-content: right;
     color: aliceblue;
-    font-family: 'Poppins', sans-serif;
+    
 }
 #carouselExampleAutoplaying{
 width: 70vw;
@@ -102,8 +101,9 @@ margin-bottom: 5px;
     justify-content: center;
 }
 .card{
-    margin: 10px;
+    margin: 10px auto;
     height: 322px;
+
 }
 #upi{
     width: 500px;
@@ -135,10 +135,11 @@ margin-bottom: 5px;
     }
 }
   .aboutText{
-    font-family: 'Poppins', sans-serif;
+    
+    margin: 0 10px;
 }
 #about{
-    margin: 10px auto;
+    margin: 25px 75px ;
 }
 .flex{
     display: flex;
@@ -158,7 +159,7 @@ margin-bottom: 5px;
     justify-content: center;
     align-items: center;
     font-size: 40px;
-    font-family: 'Poppins', sans-serif;
+   
     /* border-radius: 2px; */
     /* border: 2px solid blue; */
     color: rgb(1, 1, 95);
@@ -167,7 +168,7 @@ margin-bottom: 5px;
 
 .education,.food{
     color: rgb(1, 1, 95);
-    font-family: 'Poppins', sans-serif;
+    
     font-size: 20px;
     margin: 10px;
     border: 2px solid black;
@@ -179,17 +180,18 @@ margin-bottom: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     color: white;
     margin: auto;
     padding-top: 5px;
     font-size: 25px;
-    font-family: 'Poppins', sans-serif;
+    
     background-color:  rgb(1, 1, 95);
     border-radius: 20px;
 }
 .education p,.food p{
     padding: 3px;
-    font-family: 'Poppins', sans-serif;
+    
 }
 /* .mission{
     display: flex;
@@ -208,7 +210,7 @@ margin-bottom: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Poppins', sans-serif;
+   
 }
 .benefit .card-group{
     display: flex;
@@ -222,7 +224,7 @@ margin-bottom: 5px;
     justify-content: center;
     align-items: center;
     color:  rgb(1, 1, 95);
-    font-family: 'Poppins', sans-serif;
+   
     font-size: 40px;
 }
 .card-b{
@@ -249,9 +251,7 @@ margin-bottom: 5px;
 .tc{
     margin: 10px 20px;
 }
-.tc p{
-    font-family: 'Poppins', sans-serif;
-}
+
 .tc h3{
     color:  rgb(1, 1, 95);
     display: flex;
@@ -347,13 +347,14 @@ width: 100vw;
     text-align: center;
 }
 #modalimg{
-width: 30vw;
+width: 30rem;
 }
 @media only screen and (max-width: 576px) {
     
     #modalimg{
         width: 80vw;
         }
+    
 }
 #an,#ds{
     width: 210px;
@@ -367,4 +368,22 @@ width: 30vw;
 }
 #top-button:hover{
     background-color: yellowgreen;
+}
+.founders{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.mobile{
+    display: none;
+}
+@media only screen and (max-width: 576px) {
+    
+    .founders{
+        display: block;
+        }
+    .aboutUs .card{
+height: fit-content;
+    }    
+    
 }
