@@ -114,31 +114,31 @@
             Fill The Details To Become our Corporate Member
         </div>
         <div class="corporate">
-            <form class="corporate-form">
+            <form class="corporate-form" method="POST" name="google-sheet">
                 <div class="form-group row">
                   <label for="formGroupName">Name</label>
-                  <input type="text" class="form-control" id="formGroupName" placeholder="Enter Your Name">
+                  <input type="text" class="form-control" name="Name" id="formGroupName" placeholder="Enter Your Name">
                 </div>
                 <div class="form-group row">
                   <label for="formGroupAddress">Address</label>
-                  <input type="text" class="form-control" id="formGroupAddress" placeholder="Enter Your Address">
+                  <input type="text" class="form-control" name="Address" id="formGroupAddress" placeholder="Enter Your Address">
                 </div>
                 <div class="form-group row">
                   <label for="formGroupCity">City & State</label>
-                  <input type="text" class="form-control" id="formGroupity" placeholder="Enter Your City & State">
+                  <input type="text" class="form-control" name="City & State" id="formGroupity" placeholder="Enter Your City & State">
                 </div>
                 <div class="form-group row">
                   <label for="exampleInputEmail1" class="form-label">Email address</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <input type="email" class="form-control" name="Email" id="exampleInputEmail1" aria-describedby="emailHelp">
                   <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                 </div>
                 <div class="form-group row">
                   <label for="exampleInputNo" class="form-label">Contact No.</label>
-                  <input type="tel" class="form-control" id="exampleInputNo" placeholder="12345-67890"
-                    pattern="[0-9]{5}-[0-9]{5}">
+                  <input type="tel" class="form-control" name="Phone No" id="exampleInputNo" placeholder="1234567890"
+                    pattern="[0-9]{10}">
                 </div>
                 <div class="form-footer">
-                    <button type="submit" class="btn btn-success">Submit</button>
+                    <button type="submit" class="btn btn-success" value="submit" name="submit">Submit</button>
                   </div>
               </form>
 
@@ -169,7 +169,18 @@
                         Developed by Tonmoy Sardar & Birendra Nath Mondal
                     </span>
                 </footer>
+                <script src="index.js"></script>
+                <script>
+                  const scriptURL = 'https://script.google.com/macros/s/AKfycby-ELZyOdbckCLg6kW_rbsrJQeaxfAOSq2HVKusJ3mxIa8sFG33NAnYnCP9jn8em7I/exec'
+                  const form = document.forms['google-sheet']
+                
+                  form.addEventListener('submit', e => {
+                    e.preventDefault()
+                    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                      .then(response => alert("Thanks for showing interest. We will get back to you soon"))
+                      .catch(error => console.error('Error!', error.message))
+                  })
+                </script>
         </body>
-        <script src="index.js"></script>
         
         </html>

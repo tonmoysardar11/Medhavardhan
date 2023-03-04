@@ -4,3 +4,4 @@ window.onload = function() {
 function modalPop() {
     $("#myModal").modal('show');
 }
+
