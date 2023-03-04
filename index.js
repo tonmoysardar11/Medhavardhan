@@ -1,7 +1,6 @@
-window.onload = function() {
-    modalPop();
-}
-function modalPop() {
-    $("#myModal").modal('show');
-}
 
+
+
+let gateway= ()=>{
+    window.open('donate2.html','_self')
+}

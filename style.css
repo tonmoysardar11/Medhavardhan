@@ -8,8 +8,14 @@
 #logo{
     width: 407px;
     height: 140px;
-    margin: 0 5px;
     border-radius: 50px;
+    animation-name: logo;
+    animation-duration: 2s;
+    
+}
+@keyframes logo {
+    0% {margin-left: -25vw;}
+    100% {margin: 0;}
 }
 #blue{
     background-color: rgb(1, 1, 95);;
@@ -38,6 +44,8 @@
 }
 .nav-link:hover{
     font-weight: bolder;
+    border-bottom: 2px solid azure;
+    line-break: 0.5;
     color: azure;
 }
 .navbar-brand:hover{
@@ -86,7 +94,7 @@
     
 }
 #carouselExampleAutoplaying{
-width: 70vw;
+width: 95vw;
 margin: 5px;
 border-radius: 10px;
 margin-bottom: 5px;
@@ -107,10 +115,10 @@ margin-bottom: 5px;
 }
 #upi{
     width: 500px;
-    height: 500px;
+    height: 620px;
 }
 #certificate,#people,#tickets{
-    width: 200px;
+    width: 120px;
     margin: 0 auto;
 }
 @media only screen and (max-width: 470px) {
@@ -136,7 +144,7 @@ margin-bottom: 5px;
 }
   .aboutText{
     
-    margin: 0 10px;
+    margin: 0 20px;
 }
 #about{
     margin: 25px 75px ;
@@ -147,7 +155,7 @@ margin-bottom: 5px;
 }
 
 .carousel-item img{
-    height: 400px;
+    height: 450px;
     width: 800px;
     border-radius: 10px;
 }
@@ -386,4 +394,28 @@ width: 30rem;
 height: fit-content;
     }    
     
+}
+
+.ctext{
+    color: rgb(255, 255, 255) !important;
+    font-weight: 1000 !important;
+    font-size: 30px;
+    background-color: rgb(187, 187, 187,2.5%);
+}
+#mi{
+    width: fit-content;
+}
+
+
+.btn-primary,.btn-danger{
+    animation-name: btn;
+    animation-duration: 2s;
+}
+
+@keyframes btn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+.bg-dark{
+    height: 50px;
 }
