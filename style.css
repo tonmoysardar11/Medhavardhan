@@ -42,9 +42,10 @@
    
     color: aliceblue;
 }
-.nav-link:hover{
+.nav .nav-item .nav-link:hover{
     font-weight: bolder;
-    border-bottom: 2px solid azure;
+    border-right: 2px solid azure;
+    border-left: 2px solid azure;
     line-break: 0.5;
     color: azure;
 }
@@ -84,13 +85,14 @@
     justify-content: center;
     background-color: black;
     color: aliceblue;
+    text-align: center;
     
 }
 .dev{
     width: 100vw;
     display: flex;
     justify-content: right;
-    color: aliceblue;
+    color: black
     
 }
 #carouselExampleAutoplaying{
@@ -126,12 +128,7 @@ margin-bottom: 5px;
       width: 100vw;
     
     }
-    #title1{
-        font-size: 30px;
-    }
-    #title2{
-        font-size: 20px;
-    }
+    
     #logo{
         width: 80vw;
     }
@@ -191,14 +188,15 @@ margin-bottom: 5px;
     text-align: center;
     color: white;
     margin: auto;
-    padding-top: 5px;
+    padding: 5px;
     font-size: 25px;
     
     background-color:  rgb(1, 1, 95);
-    border-radius: 20px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
 }
 .education p,.food p{
-    padding: 3px;
+    padding: 15px;
     
 }
 /* .mission{
@@ -389,10 +387,14 @@ width: 30rem;
     
     .founders{
         display: block;
+        text-align: center;
         }
     .aboutUs .card{
 height: fit-content;
     }    
+    .btn-primary{
+        margin: 0 10px;
+    }
     
 }
 
@@ -416,6 +418,8 @@ height: fit-content;
     0% {opacity: 0;}
     100% {opacity: 1;}
 }
-.bg-dark{
-    height: 50px;
+
+.navbar-toggler{
+    margin: 0 auto;
 }
+
