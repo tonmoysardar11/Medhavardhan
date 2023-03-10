@@ -58,6 +58,12 @@
     #title1 {
       font-size: 30px;
     }
+    .flex{
+        justify-content: space-around;
+    }
+    .heading{
+        text-align: center;
+    }
   }
 
  #menu{
@@ -112,7 +118,7 @@ margin-bottom: 5px;
 }
 .card{
     margin: 10px auto;
-    height: 322px;
+    height: 260px;
 
 }
 #upi{
@@ -121,7 +127,7 @@ margin-bottom: 5px;
 }
 #certificate,#people,#tickets{
     width: 120px;
-    margin: 0 auto;
+    margin: 3px auto;
 }
 @media only screen and (max-width: 470px) {
     #carouselExampleAutoplaying {
@@ -130,7 +136,8 @@ margin-bottom: 5px;
     }
     
     #logo{
-        width: 80vw;
+        width: 97vw;
+        height: 34vw;
     }
   }
   @media only screen and (max-width: 810px) {
@@ -163,7 +170,7 @@ margin-bottom: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 40px;
+    font-size: 1.75em;
    
     /* border-radius: 2px; */
     /* border: 2px solid blue; */
@@ -230,8 +237,8 @@ margin-bottom: 5px;
     justify-content: center;
     align-items: center;
     color:  rgb(1, 1, 95);
-   
-    font-size: 40px;
+   text-align: center;
+    font-size: 1.75em;
 }
 .card-b{
     width: 25%;
@@ -360,6 +367,10 @@ width: 30rem;
     #modalimg{
         width: 80vw;
         }
+        .top-button{
+            margin: 0 auto;
+        }
+        
     
 }
 #an,#ds{
@@ -393,7 +404,7 @@ width: 30rem;
 height: fit-content;
     }    
     .btn-primary{
-        margin: 0 10px;
+        margin: 0 5px;
     }
     
 }
