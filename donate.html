@@ -216,12 +216,9 @@
     <script>
       const scriptURL = 'https://script.google.com/macros/s/AKfycbxsHUngPErFg0vCy0G9DemHSnARn9kTY7a0ef3W_xtPgzFGnOBlWWcYNVOflV2wXhhr/exec'
       const form = document.forms['google-sheet']
-      let gateway= ()=>{
-    window.open('donate2.html','_self')
-}
+      
 
       form.addEventListener('submit', e => {
-        gateway();
         alert("Click OK to Proceed to Payment Page")
         e.preventDefault()
         fetch(scriptURL, { method: 'POST', body: new FormData(form) })

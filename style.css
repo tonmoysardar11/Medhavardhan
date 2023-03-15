@@ -122,7 +122,7 @@ margin-bottom: 5px;
 
 }
 #upi{
-    width: 500px;
+    width: 25vw;
     height: 620px;
 }
 #certificate,#people,#tickets{
@@ -133,6 +133,10 @@ margin-bottom: 5px;
     #carouselExampleAutoplaying {
       width: 100vw;
     
+    }
+    #upi{
+        width: 90vw;
+        height: 620px;
     }
     
     #logo{
@@ -434,3 +438,6 @@ height: fit-content;
     margin: 0 auto;
 }
 
+.carousel-caption {
+    bottom: 16.8rem;
+}
