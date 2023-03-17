@@ -117,25 +117,28 @@
             <form class="corporate-form" method="POST" name="google-sheet">
                 <div class="form-group row">
                   <label for="formGroupName">Name</label>
-                  <input type="text" class="form-control" name="Name" id="formGroupName" placeholder="Enter Your Name">
+                  <input  class="form-control" name="Name" id="formGroupName" placeholder="Enter Your Name" required>
                 </div>
                 <div class="form-group row">
                   <label for="formGroupAddress">Address</label>
-                  <input type="text" class="form-control" name="Address" id="formGroupAddress" placeholder="Enter Your Address">
+                  <input  class="form-control" name="Address" id="formGroupAddress" placeholder="Enter Your Address" required>
                 </div>
                 <div class="form-group row">
-                  <label for="formGroupCity">City & State</label>
-                  <input type="text" class="form-control" name="City & State" id="formGroupity" placeholder="Enter Your City & State">
+                  <label for="formGroupCity">City</label>
+                  <input  class="form-control" name="City" id="formGroupity" placeholder="Enter Your City" required>
+                </div>
+                <div class="form-group row">
+                  <label for="formGroupCity">State</label>
+                  <input  class="form-control" name="State" id="formGroupity" placeholder="Enter Your State" required>
                 </div>
                 <div class="form-group row">
                   <label for="exampleInputEmail1" class="form-label">Email address</label>
-                  <input type="email" class="form-control" name="Email" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <input class="form-control" name="Email" id="exampleInputEmail1" aria-describedby="emailHelp" required>
                   <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                 </div>
                 <div class="form-group row">
                   <label for="exampleInputNo" class="form-label">Contact No.</label>
-                  <input type="tel" class="form-control" name="Phone No" id="exampleInputNo" placeholder="1234567890"
-                    pattern="[0-9]{10}">
+                  <input type="tel" class="form-control" name="Phone No" id="exampleInputNo" placeholder="1234567890" required>
                 </div>
                 <div class="form-footer">
                     <button type="submit" class="btn btn-success" value="submit" name="submit">Submit</button>
@@ -176,8 +179,11 @@
                   form.addEventListener('submit', e => {
                     e.preventDefault()
                     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                      .then(response => alert("Thanks for showing interest. We will get back to you soon"))
-                      .catch(error => console.error('Error!', error.message))
+                      .then(response => {
+            alert("Thanks for showing interest. We will get back to you soon")
+            window.location.replace('index.html');
+          })
+                      .catch(error => alert('Form Not filled', error.message))
                   })
                 </script>
                 <script src="index.js"></script>

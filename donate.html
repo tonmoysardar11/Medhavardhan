@@ -117,10 +117,10 @@
           Fill The Details To Donate
         </div>
         <div class="member">
-          <form class="member-form" method="POST" name="google-sheet" onsubmit="return(proceed())">
+          <form class="member-form" method="POST" name="google-sheet">
             <div class="form-group row">
               <label for="formGroupName">Name</label>
-              <input type="text" class="form-control" name='Name' id="name" placeholder="Enter Your Name"
+              <input class="form-control" name='Name' id="name" placeholder="Enter Your Name"
                 required>
             </div>
 
@@ -137,40 +137,40 @@
             <div class="form-group row">
               <label for="formGroupName">PAN No. IN CAPS</label>
               <input type="" class="form-control" id="formGroupName" name='PAN' placeholder="ABCDF1234E"
-                pattern="[A-Z]{5}[0-9]{4}[A-Z]{1}" required>
+                 required>
             </div>
 
 
             <div class="form-group row">
               <label for="formGroupAddress">Address</label>
-              <input type="text" class="form-control" id="formGroupAddress" name='Address'
+              <input class="form-control" id="formGroupAddress" name='Address'
                 placeholder="Enter Your Address" required>
             </div>
             <div class="form-group row">
               <label for="formGroupCity">City</label>
-              <input type="text" class="form-control" id="formGroupcity" name='City' placeholder="Enter Your City"
+              <input class="form-control" id="formGroupcity" name='City' placeholder="Enter Your City"
                 required>
             </div>
             <div class="form-group row">
               <label for="formGroupCity">State</label>
-              <input type="text" class="form-control" id="formGroupcity" name='State' placeholder="Enter Your State"
+              <input class="form-control" id="formGroupcity" name='State' placeholder="Enter Your State"
                 required>
             </div>
             <div class="form-group row">
               <label for="formGroupCity">Pin Code</label>
-              <input type="" class="form-control" id="formGroupcity" name='Pin' placeholder="Enter Your Pin"
+              <input  class="form-control" id="formGroupcity" name='Pin' placeholder="Enter Your Pin"
                 required>
             </div>
             <div class="form-group row">
               <label for="exampleInputEmail1" class="form-label">Email address</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" name='email' placeholder="abc@xyz.com"
+              <input class="form-control" id="exampleInputEmail1" name='email' placeholder="abc@xyz.com"
                 aria-describedby="emailHelp" required>
               <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
             </div>
             <div class="form-group row">
               <label for="exampleInputNo" class="form-label">Contact No.</label>
               <input type="tel" class="form-control" id="exampleInputNo" name='Phone No' placeholder="1234567890"
-                pattern="[0-9]{10}" required>
+               required>
             </div>
             <div class="tc">
               <div class="form-check">
@@ -181,8 +181,7 @@
               </div>
             </div>
             <div class="form-group row">
-              <p class="tax">*YOUR CONTRIBUTIONS ARE ELIGIBLE FOR UPTO 50% TAX BENEFIT UNDER SECTION 80G AS MEDHAVARDHAN
-                FOUNDATION IS REGISTERED AS NON PROFIT ORGANIZATION*</p>
+              <p class="tax">*YOUR CONTRIBUTIONS ARE ELIGIBLE FOR UPTO 50% TAX BENEFIT UNDER SECTION 80G *</p>
             </div>
             <div class="form-footer">
               <button type="submit" class="btn btn-success" name='Submit' value="submit" >Submit</button>
@@ -222,7 +221,10 @@
         alert("Click OK to Proceed to Payment Page")
         e.preventDefault()
         fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-          .then(response => alert("Thanks for showing interest. We will get back to you soon"))
+          .then(response => {
+            alert("Thanks for showing interest. We will get back to you soon")
+            window.location.replace('donate2.html');
+          })
           .catch(error => console.error('Error!', error.message))
       })
     </script>

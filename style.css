@@ -97,7 +97,8 @@
 .dev{
     width: 100vw;
     display: flex;
-    justify-content: right;
+    justify-content: center;
+    align-items: center;
     color: black
     
 }
@@ -360,7 +361,7 @@ width: 100vw;
     vertical-align: middle;
 }
 .tax{
-    font-size: x-small;
+    font-size: 18px;
     text-align: center;
 }
 #modalimg{
@@ -440,4 +441,8 @@ height: fit-content;
 
 .carousel-caption {
     bottom: 16.8rem;
+}
+.np{
+display: flex;
+justify-content: center;
 }
